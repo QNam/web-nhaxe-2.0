@@ -1,0 +1,125 @@
+:root {
+    --main-color: #464D5D; 
+    --main-font-family: Cabin; 
+    --main-bg-color:#F9FAFC;
+    --sub-color: #FFA000
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Cabin;
+    font-size: 16px;
+    color: #464D5D;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+ul{
+    list-style: none;
+}
+
+
+
+.container{
+    margin: auto;
+}
+/* header */
+.header{
+    background-color: var(--main-bg-color);
+    
+
+}
+.navbar__top__wrap{
+    display: flex;
+    height: 32px;
+    align-items: center;
+    
+}
+.navbar__top .item svg path{
+    fill: var(--main-color);
+}
+.navbar__top .item span{
+    font-size: 14px;
+}
+.navbar__top .item{
+    display: flex;
+    margin-right: 25px;
+}
+.navbar__top .item svg{
+    margin-right: 5px;
+}
+.navbar__top .item:hover svg path{
+    fill: var(--sub-color);
+}
+.navbar__top .item:hover span{
+    color: var(--sub-color);
+}
+
+/* navbar */
+.navbar__main{
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.05);
+}
+.navbar__main__wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.navbar__right ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.navbar__right ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.navbar__right{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+.navbar__right ul li a:hover svg path{
+    fill: var(--sub-color);
+}
+.navbar__right ul li a:hover span{
+    color: var(--sub-color);
+}
+.navbar__right ul li a svg path{
+    margin-bottom: 8px;
+}
+
+/* banner */
+.banner img{
+    width: 100%;
+}
+.banner{
+    background: var(--main-bg-color);
+}
+
+
+/* choose route */
+.choose__route{
+    display: flex;
+}
+.choose__route .item{
+    border: 1px solid #CFD3DB;
+    display: flex;
+    padding: 8px;
+    width: 20%;
+}
+.select2-container--default .select2-selection--single, .departure__date input{
+    border:none
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    display: none;
+}
+.choose__route .item svg{
+    margin-right: 10px;
+}
+.choose__route 
