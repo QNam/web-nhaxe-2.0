@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+}
+body {
+    background: #E5E5E5;
+}
+
+/*header*/
+.header { 
+    width: 100%;
+}
+.navbar__wrap {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background: #F9FAFC;
+
+}
+.navbar__logo {
+    padding-left: 60px;
+    /* background: #F9FAFC; */
+}
+.navbar__menu {
+    width: 70%;
+    height: 60px;
+    background-image: url('../img/navbar_menu_bg.png');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-color: orange; */
+    display: grid;
+    place-items: center;
+    vertical-align: middle;
+}
+.navbar__menu ul {
+    padding-left: 100px;
+    list-style: none;
+    display: flex;
+}
+.navbar__menu ul li {
+    height: 60px;
+    padding: 0 15px;
+}
+.navbar__menu ul li a {
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    color: #FFFFFF;
+    height: 100%;
+}
+.navbar__menu ul li:last-child a {
+    display: flex;
+}
+.navbar__menu ul li:last-child a span {
+    margin: 0 5px;
+}
+/*header*/
+
+
+/*banner*/
+.banner {
+    /* width: 100%; */
+    margin-bottom: -20vh;
+}
+.banner__wrap {
+    width: 100%;
+}
+.banner__wrap img {
+    width: 100%;
+    vertical-align: middle;
+}
+/*banner*/
+
+/*bookingTicket*/
+.--center {
+    margin: auto;
+}
+
+.bookingTicket {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    height: 45vh;
+}
+
+
+
+
+
