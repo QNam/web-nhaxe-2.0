@@ -22,7 +22,7 @@ body {
 }
 
 /*header*/
-.header { 
+.header {
     width: 100%;
 }
 
@@ -37,7 +37,6 @@ body {
 
 .navbar__logo {
     padding-left: 60px;
-    /* background: #F9FAFC; */
 }
 
 .navbar__menu {
@@ -45,8 +44,6 @@ body {
     height: 60px;
     background-image: url('../img/navbar_menu_bg.png');
     background-repeat: no-repeat;
-    /* background-size: cover; */
-    /* background-color: orange; */
     display: grid;
     place-items: center;
     vertical-align: middle;
@@ -81,6 +78,7 @@ body {
 .navbar__menu ul li:last-child a span {
     margin: 0 5px;
 }
+
 /*header*/
 
 /*banner*/
@@ -93,54 +91,102 @@ body {
     vertical-align: middle;
     margin-bottom: -100px;
 }
+
 /*banner*/
 
-/*bookingTicket*/
-.bookingTicket {
+/*searchTrtip*/
+.searchTrip {
     background: #FFFFFF;
     box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
-    height: 320px;
     padding: 24px;
 }
 
-.searchTicket {
-    width: 100%;
+/*searchTrtip*/
+
+/*searchTicket__wrap*/
+.searchTicket__wrap {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ECEDF1;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*searchTicket__content*/
+.searchTicket__content {
+    flex-basis: 80%;
     display: flex;
     justify-content: space-between;
 }
 
 .searchTicket__item {
+    flex-basis: 25%;
     display: flex;
+    margin-right: 15px;
     background: #FFFFFF;
     border: 1px solid #CFD3DB;
+    box-sizing: border-box;
     box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
     padding: 8px;
-    width: 19%;
     position: relative;
 }
 
 .searchTicket__item__left {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
-.select2-container {
+.searchTicket__item__right h3 {
+    margin-top: 8px;
+}
+
+.searchTicket__item__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #646D84;
+}
+
+.searchTicket__item__right p {
+    margin-top: 8px;
+}
+
+.searchTicket__submit {
+    flex-basis: 20%;
+    background: linear-gradient(0deg, #F7941E 0%, #F9A94B 49.42%);
+    border: 1px solid #F7941E;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchTicket__submit .searchTicket__submit__right h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+/*searchTicket__content*/
+
+
+/*select2*/
+.select2 {
     position: absolute;
-    width: 100%!important;
-    height: 100%!important;
-    opacity: 0;
     top: 0;
     left: 0;
+    height: 100% !important;
 }
 
 .select2-selection {
-    height: 100%!important;
-    opacity: 0!important;
-}
-
-.select2-container--open {
-    opacity: 1;
+    height: 100% !important;
+    opacity: 0 !important;
 }
 
 #datepicker {
@@ -153,71 +199,17 @@ body {
     border: none;
 }
 
-.searchTicket {
-    padding-bottom: 32px;
-    border-bottom: 1px solid #ECEDF1;
-}
-
-.search__item__title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #646D84;
-}
-
-.searchTicket__item__right p {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #232731;
-}
-
-.searchTicket__item__right p input {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #232731;
-}
-
-.searchTicket__item:last-child {
-    background: linear-gradient(0deg, #F7941E 0%, #F9A94B 49.42%);
-    border: 1px solid #F7941E;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.searchTicket__item:last-child .searchTicket__item__right h3 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: #FFFFFF;
-    text-transform: uppercase;
+.bookingStep {
+    margin-top: 20px;
 }
 
 .bookingStep h3 {
     text-align: center;
-    line-height: 80px;
-}
-
-.bookingStep__content__item--icon {
-    width: 64px;
-    height: 64px;
-    display: grid;
-    place-items: center;
-    border-radius: 32px;
-    border: 2px dashed #F7941E;
-    background: #FDEAD2;
+    margin-bottom: 20px;
 }
 
 .bookingStep__content {
     display: flex;
-    justify-content: space-between;
 }
 
 .bookingStep__content span {
@@ -227,22 +219,106 @@ body {
 .bookingStep__content__item {
     display: flex;
     flex-direction: column;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
 }
 
 .bookingStep__content__item p {
-    margin-top: 20px;
+    text-align: center;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 19px;
-    text-align: center;
+    color: #464D5D;
+    margin-top: 8px;
+}
+
+.bookingStep__content__item--icon {
+    width: 64px;
+    height: 64px;
+    background: #FDEAD2;
+    border: 2px dashed #F7941E;
+    border-radius: 32px;
+    display: grid;
+    place-items: center;
+}
+
+/*searchTicket__wrap*/
+
+/*intro*/
+.intro {
+    background: #FDEAD2;
+}
+
+.intro__item__download {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__item__right {
+    margin-left: 15px;
+    padding-top: 30px;
+
+}
+
+.intro__item__store {
+    padding-top: 42px;
+}
+
+.intro__item__store img:last-child {
+    padding: 10px;
+}
+
+.intro__item__support {
+    padding: 15px 0;
+}
+
+.intro__item__support h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
     color: #464D5D;
 }
 
+.intro__item__support .callphone {
+    margin: 10px 0;
+}
+
+.callphone span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F7941E;
+    margin-left: 8px;
+}
+
+.note {
+    padding: 8px;
+    background: #FFFFFF;
+    border: 2px dashed #F7941E;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.note p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #464D5D;
+}
+
+.note p span {
+    color: #F7941E;
+}
+
+/*intro*/
+
+/*payment*/
 .payment {
-    margin-top: 100px;
+    margin: 50px;
 }
 
 .payment h3 {
@@ -295,122 +371,35 @@ body {
     color: #232731;
 }
 
-.intro {
-    margin-top: 40px;
-    background: #FDEAD2;
-    padding-bottom: 15px;
+/*payment*/
+
+
+/*scheduleInfo*/
+.scheduleInfo {
+    margin-top: 50px;
 }
 
-.support__item__download {
+.scheduleInfo__item {
     display: flex;
     justify-content: space-between;
-}
-
-.support__item__left {
-    margin-right: 15px;
-}
-
-.support__item__right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.support__item__right p {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #464D5D;
-    padding-top: 30px;
-}
-
-.support__item__store img:last-child {
-    padding: 9px;
-}
-
-.support__item__support {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.support__item__support p:first-child {
-    padding-top: 15px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 29px;
-    color: #464D5D;
-}
-
-.support__item__support .note p {
-    padding: 8px;   
-    background: #FFFFFF;
-    border: 2px dashed #F7941E;
-    border-radius: 8px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-    color: #464D5D;
-}
-
-.support__item__support .note p span {
-    color: #F7941E;
-}
-
-.support__item__support .callphone span {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    color: #F7941E;
-    margin-left: 10px;
-}
-
-.boxTicket {
-    margin-top: 30px;
-}
-
-.boxTicket__item {
     background: #FFFFFF;
     border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
     position: relative;
+    height: 160px;
 }
 
-.boxTicket__item__left {
-    width: 60%;
-    padding:  24px;
+.scheduleInfo__content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 24px 0 19px 24px;
 }
 
-.boxTicket__item__left h3 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    color: #232731;
-}
-
-.boxTicket__item__left p {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #464D5D;
-}
-
-.boxTicket__item__left button {
+.scheduleInfo__content button {
     width: 112px;
     height: 32px;
     background: #FDEAD2;
     border-radius: 8px;
-    border: none;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -419,16 +408,20 @@ body {
     border: none;
 }
 
-.boxTicket__item__right {
-    width: 40%;
+.scheduleInfo__item .scheduleInfo__img {
+    flex-basis: 40%;
     background-repeat: no-repeat;
 }
 
-.boxTicket__item__right img {
+.scheduleInfo__img img {
     position: absolute;
-    right: 45px;
+    right: 0;
 }
 
+/*scheduleInfo*/
+
+
+/*footer*/
 .footer {
     margin-top: 30px;
     background: #ECEDF1;
@@ -451,21 +444,48 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #464D5D;
-    margin: 10px 0; 
+    margin: 10px 0;
 }
 
-.footer__item__address p {
-    margin: 40px 0;
+.footer__address {
+    margin-bottom: 30px;
 }
 
-.store img {
-    width: 45%;
-    margin-right: 10px;
-}
-.col-lg-3:nth-child(2) .footer__item img {
-    margin-bottom: 15px;
+.footer__app img {
+    width: 48%;
 }
 
+.footer__item__menu {
+    display: flex;
+    flex-direction: column;
+}
 
+.footer__item__menu a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464D5D;
+    margin: 5px 0;
+}
 
+.footer__social {
+    display: flex;
+    flex-direction: column;
+}
 
+.footer__social a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464D5D;
+    margin: 5px 0;
+}
+
+.footer__map iframe {
+    width: 257px;
+    height: 192px;
+}
+
+/*footer*/
